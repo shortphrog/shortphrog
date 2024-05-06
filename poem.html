@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strawberry Haiku</title>
+  <link rel="stylesheet" href="poem.css">
+</head>
+<body>
+	 <nav>
+    <ul>
+      <li><a href="website.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <h1>Strawberry.</h1>
+  <p id="strawberry">
+    Ripe red sweetness gleams,<br>
+    Summer whispers in each bite,<br>
+    Strawberry dreams bloom.<br>
+  </p>
+
+  <script>
+    const strawberry = document.getElementById("strawberry");
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    let x = screenWidth / 2; 
+    let y = screenHeight / 2; 
+    let dx = 2; 
+    let dy = 2; 
+
+    function animate() {
+      x += dx;
+      y += dy;
+
+     
+      if (x + strawberry.offsetWidth >= screenWidth || x <= 0) {
+        dx = -dx; 
+      }
+      if (y + strawberry.offsetHeight >= screenHeight || y <= 0) {
+        dy = -dy; 
+      }
+
+      strawberry.style.left = x + "px";
+      strawberry.style.top = y + "px";
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
+

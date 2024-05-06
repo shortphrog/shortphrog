@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f5;
+}
+
+
+header {
+    background-color: #ffe6e6; 
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff0000; 
+    margin-right: auto;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 0.5rem;
+    border: 1px solid #ff9999; 
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0000; 
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+.explore-posts {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+}
+
+.post {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+    aspect-ratio: 1 / 1;
+}
+
+.post img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.post-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FECBCC;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: auto;
+    justify-content: flex-end;
+    align-items: auto;
+}
+
+
+
+.likes {
+    margin-right:auto;
+}
+
+.heart-outline {
+    margin-right: auto;
+    color: #ff0000; 
+}
+
+footer {
+    background-color: #ffe6e6; 
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .search-bar {
+        width: 150px;
+    }
+
+    nav ul li {
+        margin-right: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .search-bar {
+        width: 120px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-right: 0.5rem;
+    }
+}
+

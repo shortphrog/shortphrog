@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('strwbry.jpeg');
+    background-color: rgba(247, 202, 201, 0.5);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffefef;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6C042E;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #B30524;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #B30524;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-family: 'Pacifico', cursive;
+    border: 10px solid #6C042E;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 0 auto; 
+}
+
+p {
+    color: #970D56;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    animation: bounce 3s linear infinite;
+    text-shadow: 0 0 10px white;
+    max-width: 80%; 
+    left: 50%; 
+    top: calc(50% + 100px); 
+    transform: translateX(-50%);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
+}

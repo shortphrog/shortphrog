@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+	body{
+		background-image:url("ichigo.jpeg");
+	margin:0px;
+		}
+	h1{
+		color:#E13313;
+		text-align:center;
+		font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size: 40px;
+		border: thick dotted #00C50A; 
+	}
+	
+	p{
+		background-color:#FE9A66;
+		inline-size: 300px;
+		border-block-width: 20px;
+		border-block:dotted;
+		border-block-color: yellow;
+		font-family: "Lucide Console", "Courier new", monospace; 
+		margin: 20px;
+		}
+.navbar1 ul {
+	position: sticky;
+	list-style-type:none;
+	background-color:darkseagreen;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+.navbar1 a{
+	color:hotpink;
+	text-decoration: none;
+	padding: 15px;
+	display:block;
+	text-align:center;
+}
+.navbar1 a:hover{
+	background-color: blanchedalmond;
+}
+.navbar1 li{
+	float:left;
+}
+
+h2{
+		color:#E13313;
+	background-color:darkturquoise;
+		text-align:center;
+		font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size: 40px;
+		border: thick dotted #00C50A;
+	margin: 10px;
+}
+ p2{
+		background-color:#FE9A66;
+		inline-size: 300px;
+		border-block-width: 20px;
+		border-block:dotted;
+		border-block-color: yellow;
+		font-family: "Lucide Console", "Courier new", monospace; 
+		margin: 20px;
+}
+
+h3{ background-image:url("ichigo.jpeg");
+}
+h4{ background-image:url("ichigo.jpeg");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the main content */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, "1fr"));
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #CE0D10;
+    padding: 20px;
+}
+
+/* Style the contact form */
+.contact-form form {
+    display: grid;
+    grid-template-columns: "1fr";
+    gap: 10px;
+}
+
+.contact-form .form-group {
+    display: grid;
+    gap: 5px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #CE0D10;
+}
+
+footer {
+    background-color: #CE0D10;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
